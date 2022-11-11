@@ -35,7 +35,7 @@ describe('Environment Switch Control', function () {
       });
   });
 
-  it('should display loading indicator when switches', function (done) {
+  it('should display loading indicator when switches', function () {
     cy.getByTestId('environment-switch')
       .find('.mantine-SegmentedControl-controlActive')
       .then((dom) => {
